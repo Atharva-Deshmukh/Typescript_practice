@@ -1,0 +1,9 @@
+.container {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 8%;
+    max-width: 850px;
+    height: 900px;
+    background-color: white;
+    border: 3px solid black;
+  }
