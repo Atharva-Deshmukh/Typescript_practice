@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+        <p class="selected">para1</p>
+        <p class="selected">para2</p>
+        <script>
+            // Using querySelector to select the first <p> element with class "selected"
+            const firstSelectedPara = document.querySelector('p.selected');
+            console.log(firstSelectedPara);
+
+            // Using querySelectorAll to select all <p> elements with class "selected"
+            const allSelectedParas = document.querySelectorAll('p.selected');
+            console.log(allSelectedParas);
+
+            // Loop through the NodeList returned by querySelectorAll and log each element
+            allSelectedParas.forEach((para, index) => {
+                console.log(`Selected Paragraph ${index + 1}:`, para);
+            });
+        </script>
+</body>
+</html>
