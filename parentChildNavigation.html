@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head> <title>parentChild DOM</title> </head>
+<body>
+    <div id="parentDiv">
+        <h1>Parent Div</h1>
+        <p>First Paragraph</p>
+        <p>Second Paragraph</p>
+        <span>Some Span</span>
+    </div>
+    <script>
+        var firstParagraph = document.querySelector('p');
+        var nextElementSibling = firstParagraph.nextElementSibling;
+        console.log(nextElementSibling); // Output: <p>Second Paragraph</p>
+        console.dir(nextElementSibling);
+    </script>
+</body>
+</html>
