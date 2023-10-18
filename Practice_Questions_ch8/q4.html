@@ -1,0 +1,27 @@
+<!-- Write a program to keep fetching contents of a website after every 3 seconds -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4</title>
+</head>
+<link rel="stylesheet" href="../styles.css">
+<body>
+
+  
+    
+    <script>
+        let url = 'https://jsonplaceholder.typicode.com/todos/2';
+
+       async function fetchContent(url) {
+            let content = await fetch(url);
+            return content.json();
+       }
+
+       setInterval(async () => {
+        console.log(await fetchContent(url));
+       }, 3000)
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!-- Create a Glowing bulb effect using classlist toggle method in javascript -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q5</title>
+</head>
+<link rel="stylesheet" href="../styles.css">
+<body>
+
+    <!-- our bulb -->
+    <div class="bulb">
+
+    </div>
+    
+    <script>
+       setInterval(async () => {
+        document.querySelector('.bulb').classList.toggle('bulbToggled');
+       }, 1000);
+    </script>
+</body>
+</html>
