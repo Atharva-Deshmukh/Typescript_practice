@@ -7,3 +7,19 @@
     background-color: white;
     border: 3px solid black;
   }
+
+  .list {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 8%;
+    margin-bottom: 20%;
+    max-width: fit-content;
+    height: fit-content;
+    background-color: rgb(196, 243, 196);
+    border: 3px solid black;
+  }
+
+  .list li {
+    padding: 20px;
+    font-weight: bold;
+}

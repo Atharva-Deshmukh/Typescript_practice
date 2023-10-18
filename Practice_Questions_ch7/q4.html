@@ -1,0 +1,31 @@
+<!-- Write a javascript code to change background color of all th <li> tags to purple and individual li tag colors to white -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4</title>
+</head>
+<link rel="stylesheet" href="../styles.css">
+<body>
+
+    <ul class="list">
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+        <li>Fourth</li>
+    </ul>
+    
+    <script>
+        // Select all <li> elements within the <ul> with class "list"
+        const listItems = document.querySelectorAll('.list li');
+        console.log(listItems)
+
+        // Use a forEach loop to change the color of each <li> to cyan
+        listItems.forEach((li) => {
+            li.style.background = 'purple';
+            li.style.color = 'white'
+        });
+    </script>
+</body>
+</html>

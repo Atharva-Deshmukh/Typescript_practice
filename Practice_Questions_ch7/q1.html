@@ -1,0 +1,45 @@
+<!-- Create a navbar and change the color of its first element to red -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1</title>
+</head>
+<style>
+    /* Basic CSS for the navbar */
+.navbar {
+    background-color: #302c2c; /* Set the background color */
+    overflow: hidden; /* Clear floats */
+}
+
+.navbarheader {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+}
+
+.navbarheader li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 20px; /* Add spacing between items */
+    text-decoration: none; /* Remove underlines from links */
+    color: rgb(228, 245, 73); /* Text color */
+}
+
+</style>
+<body>
+
+    <div class="navbar">
+        <ul class="navbarheader">
+            <li>Files</li>
+            <li>Edit</li>
+            <li>Selection</li>
+        </ul>
+    </div>
+    <script>
+        // JavaScript to change the color of the first element to red
+        const firstNavItem = document.querySelector('.navbarheader li:first-child');
+        firstNavItem.style.color = 'red';
+    </script>
+</body>
+</html>

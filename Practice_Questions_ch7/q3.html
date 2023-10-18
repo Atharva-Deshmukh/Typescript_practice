@@ -1,0 +1,24 @@
+<!-- Create an element with three children and change the color of first and last element to red and blue -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3</title>
+</head>
+<link rel="stylesheet" href="../styles.css">
+<body>
+
+    <ul class="list">
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+        <li>Fourth</li>
+    </ul>
+    
+    <script>
+        document.getElementsByClassName('list')[0].firstElementChild.style.color = "red";
+        document.getElementsByClassName('list')[0].lastElementChild.style.color = "blue";
+    </script>
+</body>
+</html>
