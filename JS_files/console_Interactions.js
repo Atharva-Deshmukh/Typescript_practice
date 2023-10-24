@@ -12,6 +12,7 @@ const students = [
   { id: 3, name: 'Charlie', grade: 92 },
   { id: 4, name: 'David', grade: 78 },
 ];
-
-// Using console.table to display the data
 console.table(students);
+
+console.log(document.getElementById('p1'));
+console.dir(document.getElementById('p1'));
